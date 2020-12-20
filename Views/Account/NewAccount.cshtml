@@ -1,0 +1,23 @@
+﻿@model IEnumerable<eWallet.BLL.DTO.Currency.CurrencyDTO>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <form action="/Account/NewAccount" method="post">
+            <select name="currency">
+                @foreach (var item in Model)
+                {
+                    <option value="@item">@item.ToString()</option>
+                }
+            </select>
+            <input type="submit" name="NewAccount" value="Create new account" />
+        </form>
+    </div>
+</body>
+</html>

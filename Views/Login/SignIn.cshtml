@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="~/Content/css/main.css">
+    <link rel="stylesheet" href="~/Content/css/login.css">
+    <link rel="stylesheet" href="~/Content/css/general.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="header">
+        <a href="/" class="header-text">Home</a>
+        <a href="/Home/About" class="header-text">About Us</a>
+        <a href="/Home/News" class="header-text">News</a>
+        <a href="/Login/SignIn" class="header-text" style="left:1800px">Sign IN <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8ZM8 10C5.33 10 0 11.34 0 14V16H16V14C16 11.34 10.67 10 8 10Z" fill="#659DAD" /> </svg></a>
+    </div>
+
+    <figure class="center"><img src="~/Content/img/wallet.svg"></figure>
+    <div class="main">
+        <h2 style="font-size: 30px;">
+            Your personal wallet<br />
+            <small style="font-size: 24px;">You may send, exchange and create many currency accounts</small>
+        </h2>
+    </div>
+    <br /><br />
+
+    <div class="log">
+        <form action="/Login/SignIn" method="post">
+            <label for="">Username</label><br>
+            <input type="text" placeholder="user@email.domen" name="Email" value="mmajor143@gmail.com"><br><br>
+            <label for="">Password</label><br>
+            <input type="password" placeholder="12345678" name="Password" value="naks882naks"><br>
+            <div style="text-align: center;">
+                <input type="submit" value="Sign In" class="but">
+            </div>
+        </form>
+    </div>
+    
+
+    <br><br>
+    <footer>
+        Maksym Chorny 2020
+    </footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.log{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    font-size: 20px;
+    width: 350px;
+    height: 100%;
+    background-color: azure;
+    border-radius: 20px;
+}
+
+.log label{
+    padding: 10px;
+    font-size: 16px;
+    color: rgba(172, 177, 192, 1);
+}
+
+.log input{
+    padding: 3px;
+    height: 30px;
+    width: 340px;
+    border-style: none;
+    border-bottom: 1px solid #659DAD;
+}
+
+.but{
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin-top:10px;
+    background-color: rgba(255, 184, 115, 1);
+    width: 350px;
+    height: 50px;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.but:hover{
+    background: #b6ff00;
+    color: rgb(82, 82, 82);
+}
+
+.but1{
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin-top:10px;
+    background-color:#FF8373;
+    width: 350px;
+    height: 50px;
+    border-radius: 20px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.but1:hover{
+    background: #b6ff00;
+    color: rgb(82, 82, 82);
+}
+

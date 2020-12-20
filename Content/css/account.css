@@ -1,0 +1,35 @@
+.person{
+    float: right;
+    width: 250px;
+    height: 2000px;
+}
+
+.person p{
+    padding-right: 15px;
+    text-align: center;
+}
+
+.col img{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border:solid rgb(255, 205, 187);
+}
+
+.accounts{
+    padding-top: 35%;
+    margin-left: 40%;
+    text-align: center;
+}
+
+.accounts td{
+    width: 200px;
+    border: solid ;
+    border-radius: 15px;
+    background: #46A1F8;
+}
+
+.accounts img{
+    height: 50px;
+    width: 50px;
+}

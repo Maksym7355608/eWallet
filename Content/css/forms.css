@@ -1,0 +1,60 @@
+.form{
+    padding-top: 25%;
+    margin-left: 33%;
+}
+
+.method{
+    height: 300px;
+    width: 380px;
+}
+
+.method label{
+    line-height: 45px;
+}
+
+.method input{
+    height: 30px;
+    float: right;
+    width: 212px;
+    border: solid rgba(131, 208, 251, 1);
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.method select{
+    float: right;
+    height: 30px;
+    width: 220px;
+    background: rgba(131, 208, 251, 1);
+    border-radius: 5px;
+    border: none;
+    margin-top: 7px;
+}
+
+.extension{
+    padding-top: 30px;
+}
+
+.extension input{
+    border: solid #F4A93F;
+}
+
+.button{
+    margin: -10% 20% auto;
+}
+
+.button input{
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    background: #F4A93F;
+    font-size: large;
+    border: none;
+    border-radius: 5px;
+}
+
+.button input:hover{
+    cursor: pointer;
+    background: #b6ff00;
+    color: rgb(82, 82, 82);
+}
