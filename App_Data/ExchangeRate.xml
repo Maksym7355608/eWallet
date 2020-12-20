@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<rates>
+  <rate>
+    <key>Dollar</key>
+    <value>1</value>
+  </rate>
+  <rate>
+    <key>Euro</key>
+    <value>0,85</value>
+  </rate>
+  <rate>
+    <key>Grivna</key>
+    <value>28,5</value>
+  </rate>
+</rates>
+
