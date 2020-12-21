@@ -1,6 +1,5 @@
 ﻿using eWallet.DAL.Entities.Currency;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace eWallet.DAL.Entities.PersonalAccount
 {

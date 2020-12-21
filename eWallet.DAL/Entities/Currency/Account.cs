@@ -9,6 +9,5 @@ namespace eWallet.DAL.Entities.Currency
         public double Value { get; set; }
 
         public int ClientId { get; set; }
-        public Client Client { get; set; }
     }
 }
