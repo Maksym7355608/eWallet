@@ -1,4 +1,6 @@
-﻿namespace eWallet.BLL.DTO.Currency
+﻿using eWallet.BLL.DTO.PersonalAccountDTO;
+
+namespace eWallet.BLL.DTO.Currency
 {
     public class AccountDTO
     {

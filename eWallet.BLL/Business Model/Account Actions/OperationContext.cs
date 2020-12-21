@@ -7,7 +7,7 @@ namespace eWallet.BLL.Business_Model.Account_Actions
         private IOperation operation;
         private IClientService client;
 
-        public OperationContext(IClientService service,IOperation operation)
+        public OperationContext(IClientService service, IOperation operation)
         {
             client = service;
             this.operation = operation;
@@ -16,7 +16,6 @@ namespace eWallet.BLL.Business_Model.Account_Actions
         public void Execute()
         {
             client.UpdateAccount(operation.Execute());
-            client.Dispose();
         }
     }
 }

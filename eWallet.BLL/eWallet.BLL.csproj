@@ -39,6 +39,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -50,7 +51,6 @@
     <Compile Include="DTO\CurrencyDTO\AccountDTO.cs" />
     <Compile Include="DTO\CurrencyDTO\CurrencyDTO.cs" />
     <Compile Include="DTO\OperationsDTO\AccountActionDTO.cs" />
-    <Compile Include="DTO\OperationsDTO\TransactionDTO.cs" />
     <Compile Include="DTO\PersonalAccountDTO\ClientDTO.cs" />
     <Compile Include="Business Model\Account Actions\Deposit.cs" />
     <Compile Include="Business Model\Account Actions\Exchange.cs" />
@@ -70,9 +70,6 @@
       <Project>{3e026a5a-bfc4-417f-8e71-b66e6184970a}</Project>
       <Name>eWallet.DAL</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Business Model\ExchangeRate.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Linq;
+using System.Web.Hosting;
 
 namespace eWallet.BLL.Business_Model.Account_Actions
 {
@@ -39,17 +40,21 @@ namespace eWallet.BLL.Business_Model.Account_Actions
         {
             Dictionary<CurrencyDTO, double> rate = new Dictionary<CurrencyDTO, double>();
 
-            XDocument document = XDocument.Load("ExchangeRate.xml");
 
-            var items = from x in document.Element("rates").Elements("rate")
-                        select new
-                        {
-                            key = (CurrencyDTO)Enum.Parse(typeof(CurrencyDTO), x.Element("key").Value, true),
-                            value = double.Parse(x.Element("value").Value)
-                        };
+            XDocument document = XDocument.Load(HostingEnvironment.MapPath("~/App_Data/ExchangeRate.xml"));
 
-            foreach (var item in items)
-                rate.Add(item.key, item.value);
+            
+            foreach (var item in document.Element("rates").Elements("rate"))
+            {
+                var key = item.Element("key").Value;
+                var value = double.Parse(item.Element("value").Value);
+
+                rate.Add((CurrencyDTO)Enum.Parse(typeof(CurrencyDTO), key), value);
+            }
+            
+
+            //foreach (var item in items)
+            //    rate.Add(item.key, item.value);
 
             return rate;
         }

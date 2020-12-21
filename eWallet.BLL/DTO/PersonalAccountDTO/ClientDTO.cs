@@ -10,7 +10,7 @@ namespace eWallet.BLL.DTO.PersonalAccountDTO
         public string Surname { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public int IdBalance { get; set; }
+
         public ICollection<AccountDTO> Money { get; set; }
     }
 }
