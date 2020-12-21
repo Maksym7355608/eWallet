@@ -50,7 +50,7 @@ namespace eWallet.Controllers
             List<CurrencyDTO> last = new List<CurrencyDTO>();
             for (int i = 0; i < Enum.GetValues(typeof(CurrencyDTO)).Length; i++)
             {
-                bool flag = false;
+                bool flag = true;
                 foreach (var item in client.Money)
                 {
                     if ((int)item.Name == i)
@@ -69,7 +69,7 @@ namespace eWallet.Controllers
         public void NewAccount(CurrencyDTO? currency)
         {
             clientService.CreateAccount(new AccountDTO { ClientId = client.Id, Name = (CurrencyDTO)currency, Value = default });
-            Response.Redirect("/Account/Accounts");
+            Getter(client.Id);
         }
         [HttpGet]
         public ActionResult Deposit()
